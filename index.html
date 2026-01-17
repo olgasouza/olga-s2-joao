@@ -17,13 +17,144 @@
         .border-box {
             border: 2px solid #47521e;
             min-height: calc(100vh - 60px);
-            padding: 20px;
+            padding: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            display: flex;
+            gap: 60px;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+        }
+        
+        .left-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .large-image {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            background-color: #d0d4b8;
+            border: 1px solid #47521e;
+            aspect-ratio: 4/3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #47521e;
+        }
+        
+        .large-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .text-content {
+            margin-top: 20px;
+            text-align: center;
+            color: #47521e;
+        }
+        
+        .right-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+        }
+        
+        .button-image {
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            background-color: #d0d4b8;
+            border: 1px solid #47521e;
+            aspect-ratio: 16/9;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #47521e;
+        }
+        
+        .button-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .button-image:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(71, 82, 30, 0.3);
+        }
+        
+        /* Mobile layout */
+        @media (max-width: 768px) {
+            .border-box {
+                padding: 20px;
+            }
+            
+            .container {
+                flex-direction: column;
+                gap: 30px;
+            }
+            
+            .left-section,
+            .right-section {
+                width: 100%;
+            }
+            
+            .large-image,
+            .button-image {
+                max-width: 100%;
+            }
         }
     </style>
 </head>
 <body>
     <div class="border-box">
-        <h1>hi</h1>
+        <div class="container">
+            <div class="left-section">
+                <div class="large-image">
+                    <!-- Replace this with your large image -->
+                    <!-- <img src="path-to-your-large-image.jpg" alt="Main Image"> -->
+                    <span>Large Image Here</span>
+                </div>
+                <div class="text-content">
+                    <h2>Your Text Here</h2>
+                    <p>Add any description or content you want below the image.</p>
+                </div>
+            </div>
+            
+            <div class="right-section">
+                <a href="page1.html" class="button-image">
+                    <!-- Replace with your button 1 image -->
+                    <!-- <img src="path-to-button1.jpg" alt="Button 1"> -->
+                    <span>Button 1</span>
+                </a>
+                
+                <a href="page2.html" class="button-image">
+                    <!-- Replace with your button 2 image -->
+                    <!-- <img src="path-to-button2.jpg" alt="Button 2"> -->
+                    <span>Button 2</span>
+                </a>
+                
+                <a href="page3.html" class="button-image">
+                    <!-- Replace with your button 3 image -->
+                    <!-- <img src="path-to-button3.jpg" alt="Button 3"> -->
+                    <span>Button 3</span>
+                </a>
+            </div>
+        </div>
     </div>
 </body>
 </html>
