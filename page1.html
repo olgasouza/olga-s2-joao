@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roteiro Cerimônia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #e5e8d2;
+            margin: 0;
+            padding: 30px;
+            font-family: 'Spectral', serif;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+        
+        .border-box {
+            border: 2px solid #47521e;
+            min-height: calc(100vh - 60px);
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .title {
+            font-size: 42px;
+            font-weight: 400;
+            color: #47521e;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        .title-underline {
+            width: 400px;
+            height: 1px;
+            background-color: #47521e;
+            margin-bottom: 40px;
+        }
+        
+        .schedule-container {
+            width: 100%;
+            max-width: 700px;
+        }
+        
+        .schedule-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 35px;
+            gap: 20px;
+        }
+        
+        .number-circle {
+            background-color: #fde4a1;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: 600;
+            color: #47521e;
+            flex-shrink: 0;
+            box-shadow: 0 4px 6px rgba(71, 82, 30, 0.2);
+        }
+        
+        .schedule-content {
+            flex: 1;
+            padding-top: 5px;
+        }
+        
+        .schedule-title {
+            font-size: 28px;
+            font-weight: 400;
+            color: #47521e;
+            margin: 0 0 5px 0;
+            line-height: 1.3;
+        }
+        
+        .schedule-music {
+            font-size: 16px;
+            color: #47521e;
+            opacity: 0.8;
+            margin: 5px 0 0 0;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .music-note {
+            font-size: 18px;
+        }
+        
+        .parents-list {
+            margin: 15px 0 0 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        .parents-list li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 8px 0;
+            font-size: 24px;
+            color: #47521e;
+        }
+        
+        .flower-icon {
+            width: 25px;
+            height: 25px;
+            object-fit: contain;
+        }
+        
+        .parents-note {
+            font-size: 14px;
+            opacity: 0.7;
+            margin-left: 35px;
+        }
+        
+        .gray-flower {
+            opacity: 0.5;
+        }
+        
+        .back-link {
+            margin-top: 50px;
+            text-align: center;
+        }
+        
+        .back-link a {
+            font-size: 28px;
+            color: #47521e;
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+        
+        .back-link a:hover {
+            opacity: 0.7;
+        }
+        
+        .logo {
+            width: 100%;
+            max-width: 100px;
+            margin-top: 30px;
+        }
+        
+        .logo img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* Mobile layout */
+        @media (max-width: 768px) {
+            .border-box {
+                padding: 20px;
+            }
+            
+            .title {
+                font-size: 32px;
+            }
+            
+            .title-underline {
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .schedule-title {
+                font-size: 22px;
+            }
+            
+            .parents-list li {
+                font-size: 20px;
+            }
+            
+            .number-circle {
+                width: 35px;
+                height: 35px;
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="border-box">
+        <h1 class="title">Roteiro Cerimônia</h1>
+        <div class="title-underline"></div>
+        
+        <div class="schedule-container">
+            <div class="schedule-item">
+                <div class="number-circle">1</div>
+                <div class="schedule-content">
+                    <h2 class="schedule-title">Entrada do celebrante - Simon Holanda</h2>
+                </div>
+            </div>
+            
+            <div class="schedule-item">
+                <div class="number-circle">2</div>
+                <div class="schedule-content">
+                    <h2 class="schedule-title">Entrada do noivo - João, Simone e Eny</h2>
+                    <p class="schedule-music"><span class="music-note">♫</span> O Garoto e a Garça - Estúdio Ghibli</p>
+                </div>
+            </div>
+            
+            <div class="schedule-item">
+                <div class="number-circle">3</div>
+                <div class="schedule-content">
+                    <h2 class="schedule-title">Entrada dos padrinhos</h2>
+                    <p class="schedule-music"><span class="music-note">♫</span> Serviços de Entregas da Kiki - Estúdio Ghibli</p>
+                    <ul class="parents-list">
+                        <li><img src="flower.png" alt="" class="flower-icon"> Sarah & Nathan</li>
+                        <li><img src="flower.png" alt="" class="flower-icon"> Luana & Ricardo</li>
+                        <li><img src="flower.png" alt="" class="flower-icon"> Sara & Pedro</li>
+                        <li><img src="flower.png" alt="" class="flower-icon"> Lizandra & Eduardo</li>
+                        <li><img src="flower.png" alt="" class="flower-icon gray-flower"> Mariana & Vavá <span class="parents-note">Não puderam estar presentes, mas celebram à distância</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="schedule-item">
+                <div class="number-circle">4</div>
+                <div class="schedule-content">
+                    <h2 class="schedule-title">Entrada pajem & daminha - Martin e Melissa</h2>
+                    <p class="schedule-music"><span class="music-note">♫</span> Meu vizinho Totoro - Estúdio Ghibli</p>
+                </div>
+            </div>
+            
+            <div class="schedule-item">
+                <div class="number-circle">5</div>
+                <div class="schedule-content">
+                    <h2 class="schedule-title">Entrada da noiva - Olga, Vânia e Manoel</h2>
+                    <p class="schedule-music"><span class="music-note">♫</span> A viagem de Chihiro - Estúdio Ghibli</p>
+                </div>
+            </div>
+            
+            <div class="schedule-item">
+                <div class="number-circle">6</div>
+                <div class="schedule-content">
+                    <h2 class="schedule-title">Celebração / Troca de votos / Dedicatórias</h2>
+                </div>
+            </div>
+            
+            <div class="schedule-item">
+                <div class="number-circle">7</div>
+                <div class="schedule-content">
+                    <h2 class="schedule-title">Entrega das alianças - Salete, Dora e Gracinha</h2>
+                    <p class="schedule-music"><span class="music-note">♫</span> As memórias de Marnie - Estúdio Ghibli</p>
+                </div>
+            </div>
+            
+            <div class="schedule-item">
+                <div class="number-circle">8</div>
+                <div class="schedule-content">
+                    <h2 class="schedule-title">Finalização da cerimônia</h2>
+                    <p class="schedule-music"><span class="music-note">♫</span> Sussurros dos Coração - Estúdio Ghibli</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="back-link">
+            <a href="index.html">Voltar ao início</a>
+        </div>
+        
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+    </div>
+</body>
+</html>
